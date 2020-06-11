@@ -35,3 +35,39 @@
     width: 24px;
     height: 24px;
 }
+.story-box{
+    width: 100%;
+    height: 120px;
+    margin-top: 5px;
+    border-top: 1px solid #f2f2f2;
+    border-bottom: 1px solid #f2f2f2;
+}
+.story-list{
+    width: 90%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+}
+.user-list{
+    width: 56px;
+    height: 74px;
+    margin-right: 24px;
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+.user-name{
+    margin: auto;
+    font-size: 14px;
+}
+.profile{
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+}
+.user-profile-box{
+    width: 56px;
+    height: 56px;
+    margin: auto;
+    background-color: #000000;
+    border-radius: 100%;
+}
