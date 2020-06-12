@@ -2,6 +2,7 @@ import React from 'react';
 import './App.css';
 import {Header} from './Header'
 import {Story} from './Story'
+import {Post} from './Post'
 
 function App() {
   return (
@@ -11,6 +12,9 @@ function App() {
       </div>
       <div className="stroy">
         <Story />
+      </div>
+      <div>
+        <Post />
       </div>
     </div>
   );

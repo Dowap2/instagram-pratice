@@ -1,7 +1,15 @@
+.App{
+    background: #fafafa;
+    height: 100vh;
+}
 .header{
     width: 100%;
     height: 54px;
     border-bottom:0.5px solid #f2f2f2 ;
+    background: #ffffff;
+}
+.story{
+    background: #ffffff;
 }
 .header-content{
     width: 90%;
@@ -28,7 +36,7 @@
     flex-direction: row;
     justify-content: center;
 }
-.home-box , .send-box , .compass-box , .heart-box{
+.home-box , .send-box , .compass-box , .heart-box , .more-icon{
     margin-left: 20px;
 }
 .home-icon,.send-icon, .compass-icon , .heart-icon{
@@ -68,6 +76,48 @@
     width: 56px;
     height: 56px;
     margin: auto;
-    background-color: #000000;
+    padding: 1rem;
     border-radius: 100%;
+    background: linear-gradient(to right, red, purple);
+    padding: 3px;
+}
+.user-box{
+    width: 90%;
+    margin: auto;
+    margin-top: 20px;
+    display: flex;
+}
+.profile-box{
+    width: 32px;
+    height: 32px;
+    border-radius: 100%;
+}
+.user-profile{
+    width: 32px;
+    height: 32px;
+    border-radius: 100%;
+}
+.user-box-user-name{
+    margin: auto; 
+    margin-left: 20px;
+    vertical-align: middle;
+    font-weight: 600;
+}
+.more-icon{
+    width: 16px;
+    height: 16px;
+    padding-top: 8px;
+}
+.post-picture-box{
+    width: 100%;
+    position: relative;
+    padding-bottom: 100%;
+    margin-top: 10px;
+    background: #000000;
+}
+.post-picture{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
 }

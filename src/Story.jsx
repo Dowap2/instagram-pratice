@@ -3,7 +3,7 @@ import profile from './profile.jpg'
 
 export function Story(props){
     return(
-        <div>
+        <div className="story">
             <div className="story-box">
                 <div className="story-list">
                     <div className="user-list">
