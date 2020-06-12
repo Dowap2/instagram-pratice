@@ -10,11 +10,13 @@ function App() {
       <div className="header">
         <Header />
       </div>
-      <div className="stroy">
-        <Story />
-      </div>
-      <div>
-        <Post />
+      <div className="content">
+        <div className="stroy">
+          <Story />
+        </div>
+        <div>
+          <Post />
+        </div>
       </div>
     </div>
   );
