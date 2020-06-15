@@ -3,6 +3,7 @@ import './App.css';
 import {Header} from './Header'
 import {Story} from './Story'
 import {Post} from './Post'
+import {SideBar} from './SideBar'
 
 function App() {
   return (
@@ -11,7 +12,10 @@ function App() {
         <Header />
       </div>
       <div className="content">
-        <div className="stroy">
+        <div className="sideBar">
+          <SideBar />
+        </div>
+        <div className="story">
           <Story />
         </div>
         <div>
