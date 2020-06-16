@@ -220,18 +220,76 @@
     }
     .side-bar-user{
         display: flex;
+        height: 56px;
+        margin-top: 30px;
     }
     .side-bar-name{
-        margin-left: 10px;
+        margin-left: 15px;
         font-size: 14px;
+        padding-top: 10px;
     }
     .side-bar-realname{
         color: #8A807C;
     }
     .side-bar-profile-picture{
-        width: 48px;
-        height: 48px;
+        width: 56px;
+        height: 56px;
         border-radius: 100%;
+    }
+    .recommend-follow-title-box{
+        display: flex;
+        font-size: 14px;
+        margin-top: 20px;
+    }
+    .recommend-follow-title{
+        width: 100%;
+        color: #8A807C;
+    }
+    .recommend-follow-button{
+        width: 50px;
+        font-size: 12px;
+        float: right;
+    }
+    .recommend-follow-list{
+        width: 300px;
+        height: 256px;
+    }
+    .follow-list , .follow-list-box{
+        display: flex;
+    }
+    .follow-list{
+        width: 100%;
+    }
+    .follow-list-box{
+        margin-top: 10px;
+    }
+    .follow-list-profile{
+        width: 32px;
+        height: 32px;
+        border-radius: 100%;
+    }
+    .follow-list-name{
+        margin-left: 10px;
+        padding-top: 5px;
+    }
+    .follow-list-nickname{
+        font-weight: bold;
+        font-size: 12px;
+    }
+    .follow-list-information{
+        color: #8A807C;
+        font-size: 12px;
+    }
+    .follow-list-button{
+        color: blue;
+        width: 15%;
+        font-size: 12px;
+        padding-top: 15px;
+    }
+    .footer-content , .footer{
+        font-size: 12px;
+        color: #8A807C;
+        margin-top: 30px;
     }
     .content{
         width: 935px;

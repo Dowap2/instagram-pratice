@@ -1,19 +1,15 @@
 import React from 'react';
-import profile from './profile.jpg'
+import {SideBarUserProfile} from './SideBarUserProfile'
+import {RecommendFollow} from './RecommendFollow'
+import {Footer} from './Footer'
 
 export function SideBar(props){
     return(
         <div>
             <div className="side-bar">
-                <div className="side-bar-user">
-                    <div className="side-bar-profile">
-                        <img src={profile} className="side-bar-profile-picture"/>
-                    </div>
-                    <div className="side-bar-name">
-                        <div className="side-bar-nickname"><b>junha0608</b></div>
-                        <div className="side-bar-realname">박준하</div>
-                    </div>
-                </div>
+                <SideBarUserProfile />
+                <RecommendFollow />
+                <Footer />
             </div>
         </div>
     )
