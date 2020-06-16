@@ -2,6 +2,7 @@ import React from 'react';
 import {User} from './User'
 import {Picture} from './Picture'
 import {Comment} from './Comment'
+import {AddComment} from './AddComment'
 
 export function Post(props){
     return(
@@ -10,6 +11,7 @@ export function Post(props){
                 <User />
                 <Picture />
                 <Comment />
+                <AddComment />
             </div>
         </div>
     )

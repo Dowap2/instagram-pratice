@@ -20,6 +20,7 @@ function App() {
         </div>
         <div>
           <Post />
+          <Post />
         </div>
       </div>
     </div>

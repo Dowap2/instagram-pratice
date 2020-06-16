@@ -190,6 +190,7 @@
 .comment-comment-box{
     display: flex;
     margin-top: 5px;
+    margin-bottom: 5px;
 }
 .comment-text{
     margin: 0;
@@ -212,6 +213,7 @@
     }
     .sideBar{
         display: inline;
+        display: fixed;
     }
     .side-bar{
         width: 300px;
@@ -307,6 +309,26 @@
         width: 614px;
         background: #ffffff;
         border: 1px solid #dddddd;
+    }
+    .AddComment-box{
+        width: 100%;
+        height: 56px;
+        border-bottom: 1px solid #dddddd;
+        border-top: 1px solid #dddddd;
+        margin-top: 10px;
+        display: flex;
+    }
+    .AddComment-input{
+        padding: 0;
+        border: 0;
+        width: 90%;
+        height: 100%;
+        margin-left: 20px;
+    }
+    .AddComment-button{
+        border: 0;
+        background: none;
+        color: blue;
     }
     .post-picture-box{
         width: 614px;
