@@ -1,4 +1,4 @@
-.App{
+html{
     background: #fafafa;
     height: 100vh;
 }
@@ -175,7 +175,6 @@
     margin: 0;
     color: #8A807C;
 }
-
 .comment-box{
     width: 80%;
     margin: auto;
@@ -195,6 +194,9 @@
 .comment-text{
     margin: 0;
     margin-left: 5px;
+}
+.AddComment-box{
+    display: none;
 }
 @media screen and (min-width: 768px){
     .header-content{
