@@ -4,27 +4,27 @@ import heart from './heart.png'
 import send from './send.png'
 import compass from './compass.png'
 import home from './home.png'
-import './App.css'
+import './Header.css'
 
 export function Header(props){
     return(
         <div>
-            <div className="header-content">
-                <div className="logo-box">
+            <div className="header__inner">
+                <div className="header__logo">
                     <img src={logo} className="logo" alt="logo"/>
                 </div>
-                <div className="icon-box">
-                    <div className="home-box">
-                        <img src={home} className="home-icon" alt="home" />
+                <div className="header__button">
+                    <div className="header__button-home">
+                        <img src={home} className="home" alt="home" />
                     </div>
-                    <div className="send-box">
-                        <img src={send} className="send-icon" alt="send" />
+                    <div className="header__button-send">
+                        <img src={send} className="send" alt="send" />
                     </div>
-                    <div className="compass-box">
-                        <img src={compass} className="compass-icon" alt="compass" />
+                    <div className="header__button-compass">
+                        <img src={compass} className="compass" alt="compass" />
                     </div>
-                    <div className="heart-box">
-                        <img src={heart} className="heart-icon" alt="heart" />
+                    <div className="header__button-heart">
+                        <img src={heart} className="heart" alt="heart" />
                     </div>
                     <div className="user"></div>
                 </div>

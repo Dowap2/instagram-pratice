@@ -1,5 +1,6 @@
 import React from 'react'
 import profile from './profile.jpg'
+import './Story.css'
 
 export function Story(props){
     return(

@@ -3,6 +3,7 @@ import {User} from './User'
 import {Picture} from './Picture'
 import {Comment} from './Comment'
 import {AddComment} from './AddComment'
+import './Post.css'
 
 export function Post(props){
     return(

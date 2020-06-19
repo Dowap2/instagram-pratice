@@ -4,13 +4,13 @@ import profile from './profile.jpg'
 export function SideBarUserProfile(props){
     return(
         <div>
-            <div className="side-bar-user">
-                <div className="side-bar-profile">
-                    <img src={profile} className="side-bar-profile-picture"/>
+            <div className="side-bar__profile">
+                <div>
+                    <img src={profile} className="side-bar__profile__pictire"/>
                 </div>
-                <div className="side-bar-name">
-                    <div className="side-bar-nickname"><b>junha0608</b></div>
-                    <div className="side-bar-realname">박준하</div>
+                <div className="side-bar__profile__info">
+                    <div className="side-bar__profile__info__id">junha0608</div>
+                    <div className="side-bar__profile__info__name">박준하</div>
                 </div>
             </div>
         </div>

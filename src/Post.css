@@ -1,0 +1,146 @@
+.user-box{
+    width: 90%;
+    margin: auto;
+    margin-top: 20px;
+    display: flex;
+}
+.profile-box{
+    width: 32px;
+    height: 32px;
+    border-radius: 100%;
+}
+.user-profile{
+    width: 32px;
+    height: 32px;
+    border-radius: 100%;
+}
+.user-box-user-name{
+    margin: auto; 
+    margin-left: 20px;
+    vertical-align: middle;
+    font-weight: 600;
+}
+.more-icon{
+    width: 16px;
+    height: 16px;
+    padding-top: 8px;
+}
+.post-picture-box{
+    width: 100%;
+    position: relative;
+    padding-bottom: 100%;
+    margin-top: 10px;
+    background: #000000;
+}
+.post-picture{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.comment-icon-box{
+    width: 90%;
+    margin: auto;
+    margin-top: 10px;
+    display: flex;
+}
+.comment-heart-icon , .comment-comment-icon, .comment-send-icon, .comment-bookmark-icon{
+    width: 24px;
+    height: 24px;
+    margin-right: 20px;
+}
+.comment-send-icon{
+    margin: auto;
+    margin-left: 0;
+}
+.comment-like-box{
+    width: 90%;
+    margin: auto;
+    margin-top: 10px;
+    font-size: 14px;
+    display: flex;
+}
+.comment-profile{
+    width: 20px;
+    height: 20px;
+    border-radius: 100%;
+}
+.comment-like-text{
+    margin: 0;
+    vertical-align: middle;
+    margin-left: 10px;
+}
+.post-text-box{
+    width: 80%;
+    margin: auto;
+    margin-top: 5px;
+    display: flex;
+    font-size: 14px;
+}
+.post-user-name{
+    margin: 0;
+}
+.post-user-text{
+    margin: 0;
+    margin-left: 5px;
+}
+.post-more{
+    margin: 0;
+    color: #8A807C;
+}
+.comment-box{
+    width: 80%;
+    margin: auto;
+    margin-top: 5px;
+    font-size: 14px;
+}
+.more-comment{
+    margin-top: 0;
+    margin-bottom: 0;
+    color: #8A807C;
+}
+.comment-comment-box{
+    display: flex;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+.comment-text{
+    margin: 0;
+    margin-left: 5px;
+}
+.AddComment-box{
+    display: none;
+}
+@media screen and (min-width: 768px){
+    .Post-box{
+        margin-top: 20px;
+        width: 614px;
+        background: #ffffff;
+        border: 1px solid #dddddd;
+    }
+    .AddComment-box{
+        width: 100%;
+        height: 56px;
+        border-bottom: 1px solid #dddddd;
+        border-top: 1px solid #dddddd;
+        margin-top: 10px;
+        display: flex;
+    }
+    .AddComment-input{
+        padding: 0;
+        border: 0;
+        width: 90%;
+        height: 100%;
+        margin-left: 20px;
+    }
+    .AddComment-button{
+        border: 0;
+        background: none;
+        color: blue;
+    }
+    .post-picture-box{
+        width: 614px;
+        height: 614px;
+        padding-bottom: 0%;
+    }
+}

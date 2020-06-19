@@ -4,11 +4,11 @@ import {FollowList} from './FollowList'
 export function RecommendFollow(props){
     return(
         <div>
-            <div className="recommend-follow-title-box">
-                <div className="recommend-follow-title"><b>회원님을 위한 추천</b></div>
-                <div className="recommend-follow-button">모두보기</div>
+            <div className="side-bar__follow">
+                <div className="side-bar__follow__title"><b>회원님을 위한 추천</b></div>
+                <div className="side-bar__follow__button">모두보기</div>
             </div>
-            <div classNam="recommend-follow-list">
+            <div className="side-bar__follow-list">
                 <FollowList />
                 <FollowList />
                 <FollowList />

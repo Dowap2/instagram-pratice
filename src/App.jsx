@@ -1,9 +1,10 @@
 import React from 'react';
-import './App.css';
 import {Header} from './Header'
 import {Story} from './Story'
 import {Post} from './Post'
 import {SideBar} from './SideBar'
+
+import './App.css';
 
 function App() {
   return (
@@ -12,7 +13,7 @@ function App() {
         <Header />
       </div>
       <div className="content">
-        <div className="sideBar">
+        <div className="side-bar">
           <SideBar />
         </div>
         <div className="story">

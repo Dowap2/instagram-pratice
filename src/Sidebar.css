@@ -1,0 +1,98 @@
+.side-bar{
+    display: none;
+}
+
+@media screen and (min-width: 768px){
+    .side-bar{
+        display: inline;
+    }
+    .side-bar{
+        position: fixed;
+        right: 0;
+        width: 300px;
+        height: 1000px;
+        float: right;
+    }
+    .side-bar__profile{
+        display: flex;
+        height: 56px;
+        margin-top: 30px;
+    }
+    .side-bar__profile__pictire{
+        width: 56px;
+        height: 56px;
+        border-radius: 100%;
+    }
+    .side-bar__profile__info{
+        margin-left: 15px;
+        font-size: 14px;
+        padding-top: 10px;
+    }
+    .side-bar__profile__info__id{
+        font-weight: bold;
+    }
+    .side-bar__profile__info__name{
+        color: #8A807C;
+    }
+    .side-bar__follow{
+        display: flex;
+        font-size: 14px;
+        margin-top: 20px;
+    }
+    .side-bar__follow__title{
+        width: 100%;
+        color: #8A807C;
+    }
+    .side-bar__follow__button{
+        width: 50px;
+        font-size: 12px;
+        float: right;
+    }
+    .side-bar__follow-list{
+        width: 300px;
+        height: 256px;
+    }
+    .follow-list,
+    .follow-list__inner
+    {
+        display: flex;
+    }
+    .follow-list__inner{
+        width: 100%;
+    }
+    .follow-list-box{
+        margin-top: 10px;
+    }
+    .follow-list__picture,
+    .picture
+    {
+        width: 32px;
+        height: 32px;
+        border-radius: 100%;
+    }
+    .follow-list__info{
+        margin-left: 10px;
+        padding-top: 5px;
+    }
+    .follow-list__info__id{
+        font-weight: bold;
+        font-size: 12px;
+    }
+    .follow-list__info__info{
+        color: #8A807C;
+        font-size: 12px;
+    }
+    .follow-list__button{
+        color: blue;
+        width: 15%;
+        font-size: 12px;
+        padding-top: 15px;
+    }
+    .footer-content,
+    .footer
+    {
+        font-size: 12px;
+        color: #8A807C;
+        margin-top: 30px;
+    }
+}
