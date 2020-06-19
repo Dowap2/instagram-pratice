@@ -1,86 +1,90 @@
-.user-box{
+.post__header{
     width: 90%;
     margin: auto;
     margin-top: 20px;
     display: flex;
 }
-.profile-box{
+.post__header__profile{
     width: 32px;
     height: 32px;
     border-radius: 100%;
 }
-.user-profile{
+.post__header__profile__picture{
     width: 32px;
     height: 32px;
     border-radius: 100%;
 }
-.user-box-user-name{
+.post__header__id{
     margin: auto; 
     margin-left: 20px;
     vertical-align: middle;
     font-weight: 600;
 }
-.more-icon{
+.more{
     width: 16px;
     height: 16px;
     padding-top: 8px;
 }
-.post-picture-box{
+.post__picture{
     width: 100%;
     position: relative;
     padding-bottom: 100%;
     margin-top: 10px;
     background: #000000;
 }
-.post-picture{
+.post__picture__inner{
     position: absolute;
     width: 100%;
     height: 100%;
     object-fit: contain;
 }
-.comment-icon-box{
+.post__comment__icon{
     width: 90%;
     margin: auto;
     margin-top: 10px;
     display: flex;
 }
-.comment-heart-icon , .comment-comment-icon, .comment-send-icon, .comment-bookmark-icon{
+.heart,
+.comment,
+.send,
+.bookmark
+{
     width: 24px;
     height: 24px;
     margin-right: 20px;
 }
-.comment-send-icon{
+.send{
     margin: auto;
     margin-left: 0;
 }
-.comment-like-box{
+.post__comment__like{
     width: 90%;
     margin: auto;
     margin-top: 10px;
     font-size: 14px;
     display: flex;
 }
-.comment-profile{
+.post__comment__profile{
     width: 20px;
     height: 20px;
     border-radius: 100%;
 }
-.comment-like-text{
+.post__comment__like__text{
     margin: 0;
     vertical-align: middle;
     margin-left: 10px;
 }
-.post-text-box{
+.post__comment__title{
     width: 80%;
     margin: auto;
     margin-top: 5px;
     display: flex;
     font-size: 14px;
 }
-.post-user-name{
+.post__comment__id{
     margin: 0;
 }
-.post-user-text{
+.post__title{
     margin: 0;
     margin-left: 5px;
 }
@@ -88,37 +92,37 @@
     margin: 0;
     color: #8A807C;
 }
-.comment-box{
+.post__comment__text{
     width: 80%;
     margin: auto;
     margin-top: 5px;
     font-size: 14px;
 }
-.more-comment{
+.post__more__comment{
     margin-top: 0;
     margin-bottom: 0;
     color: #8A807C;
 }
-.comment-comment-box{
+.post__comment__comment{
     display: flex;
     margin-top: 5px;
     margin-bottom: 5px;
 }
-.comment-text{
+.post__comment_comment__text{
     margin: 0;
     margin-left: 5px;
 }
-.AddComment-box{
+.add__comment{
     display: none;
 }
 @media screen and (min-width: 768px){
-    .Post-box{
+    .post{
         margin-top: 20px;
         width: 614px;
         background: #ffffff;
         border: 1px solid #dddddd;
     }
-    .AddComment-box{
+    .add__comment{
         width: 100%;
         height: 56px;
         border-bottom: 1px solid #dddddd;
@@ -126,14 +130,14 @@
         margin-top: 10px;
         display: flex;
     }
-    .AddComment-input{
+    .add__comment__input{
         padding: 0;
         border: 0;
         width: 90%;
         height: 100%;
         margin-left: 20px;
     }
-    .AddComment-button{
+    .add__comment__button{
         border: 0;
         background: none;
         color: blue;

@@ -5,13 +5,13 @@ import profile from './profile.jpg'
 export function User(props){
     return(
         <div>
-            <div className="user-box">
-                <div className="profile-box">
-                    <img src={profile} alt="profile" className="user-profile"/>
+            <div className="post__header">
+                <div className="post__header__profile">
+                    <img src={profile} alt="profile" className="post__header__profile__picture"/>
                 </div>
-                <div className="user-box-user-name">junha</div>
-                <div className="more-icon-box">
-                    <img src={more} alt="more" className="more-icon"/>
+                <div className="post__header__id">junha</div>
+                <div className="post__header__icon">
+                    <img src={more} alt="more" className="more"/>
                 </div>
             </div>
         </div>

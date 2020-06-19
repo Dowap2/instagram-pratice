@@ -4,38 +4,38 @@ import './Story.css'
 
 export function Story(props){
     return(
-        <div className="story">
-            <div className="story-box">
-                <div className="story-list">
-                    <div className="user-list">
-                        <div className="user-profile-box">
+        <div>
+            <div className="story__inner">
+                <div className="story__list">
+                    <div className="story__list__profile">
+                        <div className="story__list__profile-border">
                             <img src={profile} alt="profile" className="profile"/>
                         </div>
-                        <div className="user-name">dowap</div>
+                        <div className="story__list__id">dowap</div>
                     </div>
-                    <div className="user-list">
-                        <div className="user-profile-box">
-                            <img src="" alt=""/>
+                    <div className="story__list__profile">
+                        <div className="story__list__profile-border">
+                            <img src={profile} alt="profile" className="profile"/>
                         </div>
-                        <div className="user-name">dowap</div>
+                        <div className="story__list__id">dowap</div>
                     </div>
-                    <div className="user-list">
-                        <div className="user-profile-box">
-                            <img src="" alt=""/>
+                    <div className="story__list__profile">
+                        <div className="story__list__profile-border">
+                            <img src={profile} alt="profile" className="profile"/>
                         </div>
-                        <div className="user-name">dowap</div>
+                        <div className="story__list__id">dowap</div>
                     </div>
-                    <div className="user-list">
-                        <div className="user-profile-box">
-                            <img src="" alt=""/>
+                    <div className="story__list__profile">
+                        <div className="story__list__profile-border">
+                            <img src={profile} alt="profile" className="profile"/>
                         </div>
-                        <div className="user-name">dowap</div>
+                        <div className="story__list__id">dowap</div>
                     </div>
-                    <div className="user-list">
-                        <div className="user-profile-box">
-                            <img src="" alt=""/>
+                    <div className="story__list__profile">
+                        <div className="story__list__profile-border">
+                            <img src={profile} alt="profile" className="profile"/>
                         </div>
-                        <div className="user-name">dowap</div>
+                        <div className="story__list__id">dowap</div>
                     </div>
                 </div>
             </div>

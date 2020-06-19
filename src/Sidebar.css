@@ -4,9 +4,6 @@
 
 @media screen and (min-width: 768px){
     .side-bar{
-        display: inline;
-    }
-    .side-bar{
         position: fixed;
         right: 0;
         width: 300px;

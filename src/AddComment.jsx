@@ -3,13 +3,13 @@ import React from 'react';
 export function AddComment(props){
     return(
         <div>
-            <div className="AddComment-box">
+            <div className="add__comment">
                 <input 
                     type="text"
                     placeholder="댓글 달기..."
-                    className="AddComment-input"
+                    className="add__comment__input"
                 />
-                <button className="AddComment-button">게시</button>
+                <button className="add__comment__button">게시</button>
             </div>
         </div>
     )

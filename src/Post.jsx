@@ -8,7 +8,7 @@ import './Post.css'
 export function Post(props){
     return(
         <div>
-            <div className="Post-box">
+            <div className="post">
                 <User />
                 <Picture />
                 <Comment />

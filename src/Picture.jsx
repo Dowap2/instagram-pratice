@@ -4,8 +4,8 @@ import example from './example.jpg'
 export function Picture(props){
     return(
         <div>
-            <div className="post-picture-box">
-                <img src={example} alt="example" className="post-picture"/>
+            <div className="post__picture">
+                <img src={example} alt="example" className="post__picture__inner"/>
             </div>
         </div>
     )
