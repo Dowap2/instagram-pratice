@@ -1,12 +1,11 @@
 import React from 'react';
-import profile from './profile.jpg'
 
 export function SideBarUserProfile(props){
     return(
         <div>
             <div className="side-bar__profile">
                 <div>
-                    <img src={profile} className="side-bar__profile__pictire"/>
+                    <img src={props.profile} className="side-bar__profile__pictire"/>
                 </div>
                 <div className="side-bar__profile__info">
                     <div className="side-bar__profile__info__id">junha0608</div>

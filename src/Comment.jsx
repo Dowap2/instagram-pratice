@@ -1,29 +1,16 @@
 import React from 'react';
-import comment from './comment.png'
-import heart from './heart.png'
-import send from './send.png'
-import bookmark from './bookmark.png'
-import profile from './profile.jpg'
 
 export function Comment(props){
-
-    const userName = "Junha"
-    const commentNum = 8
-
+    const commentNum = 2;
+    const likeNum = 12;
     return(
         <div>
-            <div className="post__comment__icon">
-                <img src={heart} alt="heart" className="heart"/>
-                <img src={comment} alt="comment" className="comment"/>
-                <img src={send} alt="send" className="send"/>
-                <img src={bookmark} alt="bookmark" className="bookmark"/>
-            </div>
             <div className="post__comment__like">
-                <img src={profile} alt="profile" className="post__comment__profile"/>
-                <p className="post__comment__like__text"><b>{userName}</b>님 <b>외 00명</b>이 좋아합니다.</p>
+                <img src={props.profile} alt="profile" className="post__comment__profile"/>
+                <p className="post__comment__like__text"><b>{props.user}</b>님 <b>외 {likeNum}명</b>이 좋아합니다.</p>
             </div>
             <div className="post__comment__title">
-                <b className="post__comment__id">{userName}</b>
+                <b className="post__comment__id">{props.user}</b>
                 <p className="post__title">원준이 개 멍청하게 생겼다 ㄹ...</p>
                 <p className="post-more">더보기</p>
             </div>

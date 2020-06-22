@@ -131,11 +131,17 @@
         display: flex;
     }
     .add__comment__input{
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
         padding: 0;
         border: 0;
         width: 90%;
         height: 100%;
         margin-left: 20px;
+    }
+    .add__comment__input:focus{
+        outline: none;
     }
     .add__comment__button{
         border: 0;

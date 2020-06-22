@@ -9,11 +9,11 @@ export function RecommendFollow(props){
                 <div className="side-bar__follow__button">모두보기</div>
             </div>
             <div className="side-bar__follow-list">
-                <FollowList />
-                <FollowList />
-                <FollowList />
-                <FollowList />
-                <FollowList />
+                <FollowList profile={props.profile}/>
+                <FollowList profile={props.profile}/>
+                <FollowList profile={props.profile}/>
+                <FollowList profile={props.profile}/>
+                <FollowList profile={props.profile}/>
             </div>
         </div>
     )
