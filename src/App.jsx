@@ -12,18 +12,20 @@ function App() {
       <div className="header">
         <Header />
       </div>
-      <div className="content">
+      <section className="content">
+        <div className="content__main">
+          <div className="story">
+            <Story />
+          </div>
+          <div>
+            <Post />
+            <Post />
+          </div>
+        </div>
         <div className="side-bar">
           <SideBar />
         </div>
-        <div className="story">
-          <Story />
-        </div>
-        <div>
-          <Post />
-          <Post />
-        </div>
-      </div>
+      </section>
     </div>
   );
 }

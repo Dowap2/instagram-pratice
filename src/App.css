@@ -16,13 +16,20 @@ html{
 }
 .story{
     background: #ffffff;
+    margin-top: 80px;
+}
+.content__main{
+    width: 100%;
+    float: left;
 }
 @media screen and (min-width: 768px){
     .content{
         width: 935px;
+        display: flex;
         margin: auto;
     }
     .side-bar{
         display: inline;
+        top: 80px;
     }
 }
