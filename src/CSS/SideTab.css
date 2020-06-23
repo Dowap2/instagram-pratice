@@ -26,3 +26,37 @@
     width: 24px;
     height: 24px;
 }
+.side-tab__menu{
+    width: 100%;
+    height: 44px;
+    border-bottom: 1px solid #dddddd;
+}
+.side-tab__menu ul , li{
+    margin: 0;
+    padding: 0;
+    color: #dddddd;
+    list-style: none;
+    float: left;
+    line-height: 44px;
+    text-align: center;
+}
+.side-tab__menu li{
+    padding-left: 40px;
+    padding-right: 40px;
+}
+.clicked{
+    color: #000000;
+    border-bottom: 1px solid #000000;
+}
+.side-tab__user{
+    display: flex;
+}
+.side-tab__user__profile{
+    margin-top: 20px;
+    margin-left: 10px;
+}
+.side-tab__user__profile-picture{
+    width: 56px;
+    height: 56px;
+    border-radius: 100%;
+}
