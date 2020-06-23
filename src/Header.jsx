@@ -1,4 +1,5 @@
 import React from 'react'
+import {Link} from "react-router-dom";
 
 export function Header(props){
     return(
@@ -9,10 +10,14 @@ export function Header(props){
                 </div>
                 <div className="header__button">
                     <div className="header__button-home">
-                        <img src={props.home} className="home" alt="home" />
+                        <Link to="/home">
+                            <img src={props.home} className="home" alt="home" />
+                        </Link>
                     </div>
                     <div className="header__button-send">
-                        <img src={props.send} className="send" alt="send" />
+                        <Link to="/direct">
+                            <img src={props.send} className="send" alt="send" />
+                        </Link>
                     </div>
                     <div className="header__button-compass">
                         <img src={props.compass} className="compass" alt="compass" />
