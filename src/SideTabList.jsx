@@ -11,7 +11,7 @@ export function SideTabList(props) {
         <Link to="/t/01">
           <SideTabUser profile={props.profile}/>
         </Link>
-        <Link to={`${props.name}/1`}>
+        <Link to={`/direct`}>
           <SideTabUser profile={props.profile}/>
         </Link>
         <SideTabUser profile={props.profile}/>

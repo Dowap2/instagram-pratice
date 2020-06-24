@@ -5,7 +5,7 @@ export function MessegeBox(props) {
   return (
     <div className="messege-box">
         <div>
-            <MessegeRoutes/>
+            <MessegeRoutes send={props.send}/>
         </div>
     </div>
   );

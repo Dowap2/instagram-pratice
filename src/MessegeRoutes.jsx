@@ -7,10 +7,9 @@ export function MessegeRoutes(props){
     return(
     <div>
         <Switch>
-            <Route path="/direct" component={CreateMessege} />
+            <Route path="/direct" component={CreateMessege}/>
             <Route path="/t/:messege" component={MessegeText}/>
             <Route path="/t/:messege" component={MessegeText}/>
         </Switch>
-        <button onClick={e=> console.log(props.messege0)}></button>
     </div>)
 }

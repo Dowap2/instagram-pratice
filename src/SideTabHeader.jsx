@@ -6,7 +6,7 @@ export function SideTabHeader() {
     <div className="side-tab__header">
         <div className="side-tab__title">Direct</div>
         <div className="side-tab__header__icon">
-            <img src={pencil} alt="pencil" className="create__messege"/>
+            <img src={pencil} alt="pencil" className="create__messege__icon"/>
         </div>
     </div>
   );
