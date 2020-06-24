@@ -1,8 +1,9 @@
 import React from 'react';
 
-export function MessegeText(){
+export function MessegeText(props){
     return(
     <div>
-        text
+        {props.match.params.messege}
+        <button onClick={e=> console.log(props)}></button>
     </div>)
 }

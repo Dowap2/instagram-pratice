@@ -9,7 +9,7 @@ export function SideTab(props) {
     <div className="side-tab">
         <SideTabHeader />
         <SideTabMenu />
-        <SideTabList profile={props.profile}/>
+        <SideTabList profile={props.profile} name={"gyeongtae"}/>
     </div>
   );
 }

@@ -1,12 +1,16 @@
 import React from 'react';
-import { BrowserRouter as Router, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Route , Switch} from 'react-router-dom';
 import { CreateMessege } from './CreateMessege';
 import { MessegeText } from './MessegeText';
 
-export function MessegeRoutes(){
+export function MessegeRoutes(props){
     return(
     <div>
-        <Route path="/direct" component={CreateMessege} />
-        <Route path="/t/01" component={MessegeText} />
+        <Switch>
+            <Route path="/direct" component={CreateMessege} />
+            <Route path="/t/:messege" component={MessegeText}/>
+            <Route path="/t/:messege" component={MessegeText}/>
+        </Switch>
+        <button onClick={e=> console.log(props.messege0)}></button>
     </div>)
 }
