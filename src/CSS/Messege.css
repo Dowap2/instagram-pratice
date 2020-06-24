@@ -5,4 +5,9 @@
     border: 1px solid #dddddd;
     border-radius: 1%;
     background: #ffffff;
+    display: flex;
+}
+.messege-box{
+    width: 583px;
+    height: 100%;
 }

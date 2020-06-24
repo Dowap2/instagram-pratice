@@ -2,6 +2,11 @@ html{
     background: #fafafa;
     height: 100vh;
 }
+a{text-decoration:none; color: #000000;} 
+a:visited { text-decoration: none; }
+a:hover { text-decoration: none; }
+a:focus { text-decoration: none; }
+a:hover, a:active { text-decoration: none; }
 .header{
     position: fixed;
     top: 0;
