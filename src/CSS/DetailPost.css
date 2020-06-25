@@ -1,0 +1,76 @@
+.detail-post{
+    margin-top: 80px;
+    width: 935px;
+    height: 600px;
+    border-radius: 5px;
+    border: 1px solid #dddddd;
+    background-color: #ffffff;
+    font-size: 14px;
+    display: flex;
+}
+.detail-post__picture{
+    width: 600px;
+    height: 600px;
+    border-radius: 5px 0px 0px 5px;
+}
+.detail-post__header{
+    width: 336px;
+    height: 72px;
+    border-bottom: 1px solid #dddddd;
+    display: flex;
+}
+.detail-post__profile__box{
+    width: 32px;
+    height: 32px;
+    border-radius: 100%;
+    margin: auto;
+    margin-left: 20px;
+    margin-right: 10px;
+}
+.detail-post__profile{
+    width: 32px;
+    height: 32px;
+    border-radius: 100%;
+}
+.detail-post__id{
+    line-height: 72px;
+    font-weight: bold;
+}
+.detail-post__more{
+    margin: auto;
+}
+.detail-post__more__icon{
+    width: 16px;
+    height: 16px;
+    margin-left: 100px;
+}
+.post-comment{
+    display: flex;
+    padding: 20px;
+}
+.post-comment__comment{
+    width: 256px;
+    margin-left: 10px;
+    margin-top: 5px;
+}
+.post-comment__profile__box{
+    width: 32px;
+    height: 32px;
+}
+.post-comment__profile{
+    width: 32px;
+    height: 32px;
+    border-radius: 100%;
+}
+.post-comment__tag{
+    margin-top: 10px;
+    cursor: pointer;
+    color: blue;
+}
+.post-comment__comment__box{
+    padding: 20px;
+    display: flex;
+}
+.post-comment__comment__text{
+    margin-left: 10px;
+}

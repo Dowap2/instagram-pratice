@@ -11,7 +11,7 @@ export function Messege(props) {
         <div className="messege__background">
           <Router>
             <SideTab profile={props.profile}/>
-            <MessegeBox />
+            <MessegeBox send={props.send}/>
           </Router>
         </div>
     </div>

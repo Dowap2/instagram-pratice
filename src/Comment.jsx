@@ -1,8 +1,31 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
+import {Link} from "react-router-dom";
+
+let list = [];
+let moreList = [];
+let hiddenList = [];
+let commentNum = 0;
 
 export function Comment(props){
-    const commentNum = 2;
     const likeNum = 12;
+    let commentList = <div className="post__comment__comment">
+                        <b>Kim1Jun01</b>
+                        <p className="post__comment_comment__text">{props.comment}</p>
+                      </div>
+    let moreComment = <p className="post__more__comment">댓글 {commentNum-1}개 모두 보기</p>
+    if(props.comment != undefined){
+        if(commentNum < 2){
+            list = list.concat(commentList);
+        }
+        hiddenList = hiddenList.concat(commentList);
+        commentNum += 1;
+        props.setComment(undefined)
+        if(commentNum > 2){
+            moreList = [];
+            moreList = moreList.concat(moreComment);
+        }
+    }
+    
     return(
         <div>
             <div className="post__comment__like">
@@ -15,15 +38,10 @@ export function Comment(props){
                 <p className="post-more">더보기</p>
             </div>
             <div className="post__comment__text">
-                <p className="post__more__comment">댓글 {commentNum}개 모두 보기</p>
-                <div className="post__comment__comment">
-                    <b>Kim1Jun01</b>
-                    <p className="post__comment_comment__text">ㅋㅋㅋㅋㅋㅋㅋㅋㅋㅋ레전드</p>
-                </div>
-                <div className="post__comment__comment">
-                    <b>PaperEd</b>
-                    <p className="post__comment_comment__text">개잘찍었네ㄷ</p>
-                </div>
+                <Link to="/p/:value" >
+                    {moreList}
+                </Link>
+                {list}
             </div>
         </div>
     )
