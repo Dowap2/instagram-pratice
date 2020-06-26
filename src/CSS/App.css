@@ -27,6 +27,14 @@ a:hover, a:active { text-decoration: none; }
     width: 100%;
     float: left;
 }
+.not-found{
+    width: 935px;
+    height: 200px;
+    font-size: 120px;
+    margin: auto;
+    margin-top: 400px;
+    text-align: center;
+}
 @media screen and (min-width: 768px){
     .content{
         width: 935px;

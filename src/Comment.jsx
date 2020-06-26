@@ -17,7 +17,7 @@ export function Comment(props){
         if(commentNum < 2){
             list = list.concat(commentList);
         }
-        hiddenList = hiddenList.concat(commentList);
+        hiddenList = hiddenList.concat(props.comment);
         commentNum += 1;
         props.setComment(undefined)
         if(commentNum > 2){
@@ -38,7 +38,7 @@ export function Comment(props){
                 <p className="post-more">더보기</p>
             </div>
             <div className="post__comment__text">
-                <Link to="/p/:value" >
+                <Link to={{ pathname: '/p', state: hiddenList }}>
                     {moreList}
                 </Link>
                 {list}

@@ -12,9 +12,10 @@
     width: 600px;
     height: 600px;
     border-radius: 5px 0px 0px 5px;
+    border-right: 1px solid #dddddd;
 }
 .detail-post__header{
-    width: 336px;
+    width: 335px;
     height: 72px;
     border-bottom: 1px solid #dddddd;
     display: flex;
@@ -44,9 +45,14 @@
     height: 16px;
     margin-left: 100px;
 }
+.post-comment__box{
+    height: calc(600px - 57px - 73px);
+    overflow: auto;
+}
 .post-comment{
     display: flex;
     padding: 20px;
+    padding-bottom: 10px;
 }
 .post-comment__comment{
     width: 256px;
@@ -69,8 +75,28 @@
 }
 .post-comment__comment__box{
     padding: 20px;
+}
+.comment__item{
     display: flex;
+    margin-bottom: 30px;
 }
 .post-comment__comment__text{
     margin-left: 10px;
+}
+.comment__info{
+    margin-top: 10px;
+    display: flex;
+    font-size: 12px;
+    color: #888888;
+}
+.user__id{
+    padding-right: 5px;
+}
+.comment__reply{
+    padding-left: 10px;
+}
+.detail-post__add__comment{
+    width: 335px;
+    height: 56px;
+    border-top: 1px solid #dddddd;
 }

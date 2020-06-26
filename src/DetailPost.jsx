@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import {DetailPostHeader} from './DetailPostHeader'
 import {DetailPostComment} from './DetailPostComment'
 import {DetailPostAddComment} from './DetailPostAddComment'
@@ -7,7 +7,10 @@ import more from './ICON/more.png'
 import './CSS/DetailPost.css'
 
 
-export function DetailPost(props){
+export function DetailPost({ match, location, history }){
+    const commentList = location.state;
+    const [comment , setComment] = useState("")
+    const [addComment , setAddComment] = useState()
     return(
     <div>
         <div className="detail-post">
@@ -16,11 +19,10 @@ export function DetailPost(props){
             </div>
             <div>
                 <DetailPostHeader more={more}/>
-                <DetailPostComment img={"https://source.unsplash.com/900x900/?logo"}/>
-                <DetailPostAddComment/>
-                <button onClick={e=> console.log(props.match.params.value)}>ㅇ허무ㅠㅏㅓㅜㅈ</button>
+                <DetailPostComment img={"https://source.unsplash.com/900x900/?logo"} comment={commentList} addComment={addComment} setAddComment={setAddComment}/>
+                <DetailPostAddComment value={comment} onChange={setComment} comment={setAddComment}/>
             </div>
-            
+            <button onClick={e=> console.log(addComment)}>ddddddd</button>
         </div>
     </div>)
 }
