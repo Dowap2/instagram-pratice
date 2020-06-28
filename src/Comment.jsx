@@ -7,12 +7,6 @@ let hiddenList = []; //p로 넘기는 모든 댓글
 let commentNum = 0;
 let moreTitle = []
 let moreText = "...더보기"
-let likeNum = 12;
-
-function more(){
-    moreTitle=<div>#text</div>
-    moreText= null
-}
 
 export function Comment(props){
     let commentList = <div className="post__comment__comment">
@@ -34,12 +28,15 @@ export function Comment(props){
         commentNum += 1;
         props.setComment(undefined)
     }
-
+    function more(){
+        moreTitle=<div>#text</div>
+        moreText=null
+    }
     return(
         <div>
             <div className="post__comment__like">
                 <img src={props.profile} alt="profile" className="post__comment__profile"/>
-                <p className="post__comment__like__text"><b>{props.user}</b>님 <b>외 {likeNum}명</b>이 좋아합니다.</p>
+                <p className="post__comment__like__text"><b>{props.user}</b>님 <b>외 {props.likeNum}명</b>이 좋아합니다.</p>
             </div>
             <div className="post__comment__title">
                 <b className="post__comment__id">{props.user}</b>

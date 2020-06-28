@@ -11,6 +11,7 @@ import './CSS/SideBar.css'
 import example from './IMG/example.jpg'
 import profile from './IMG/profile.jpg'
 import heart from './ICON/heart.png'
+import fill_heart from './ICON/fill_heart.png'
 import send from './ICON/send.png'
 import more from './ICON/more.png'
 import comment from './ICON/comment.png'
@@ -26,11 +27,11 @@ export function ContentHome() {
           <div>
             <Post 
               more={more} profile={profile} img={example}
-              heart={heart} comment={comment} send={send} bookmark={bookmark}
+              heart={heart} fill_heart={fill_heart} comment={comment} send={send} bookmark={bookmark}
             />
             <Post 
               more={more} profile={profile} img={example}
-              heart={heart} comment={comment} send={send} bookmark={bookmark}
+              heart={heart} fill_heart={fill_heart} comment={comment} send={send} bookmark={bookmark}
             />
           </div>
         </div>
