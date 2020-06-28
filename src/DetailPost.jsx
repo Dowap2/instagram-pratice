@@ -22,7 +22,6 @@ export function DetailPost({ match, location, history }){
                 <DetailPostComment img={"https://source.unsplash.com/900x900/?logo"} comment={commentList} addComment={addComment} setAddComment={setAddComment}/>
                 <DetailPostAddComment value={comment} onChange={setComment} comment={setAddComment}/>
             </div>
-            <button onClick={e=> console.log(addComment)}>ddddddd</button>
         </div>
     </div>)
 }

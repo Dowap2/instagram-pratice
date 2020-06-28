@@ -1,8 +1,9 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import './CSS/DetailPost.css'
 
 let commentList = [];
 export function DetailPostComment(props){
+    let commentNum = commentList.length;
     if(props.addComment != null){
         let newCommentItem =    <div className="comment__item">
                                     <img src={props.img} className="post-comment__profile"/>
@@ -20,7 +21,7 @@ export function DetailPostComment(props){
         props.setAddComment(null)
     }
     if(props.comment != null){
-        for(let i=0; i<3; i++){
+        for(let i=0; i<props.comment.length; i++){
             let commentItem =   <div className="comment__item">
                                     <img src={props.img} className="post-comment__profile"/>
                                     <div className="post-comment__comment__text">
