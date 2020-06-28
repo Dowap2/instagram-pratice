@@ -82,10 +82,22 @@
         font-size: 12px;
     }
     .follow-list__button{
+        border: 0;
+        background: none;
         color: blue;
-        width: 15%;
+        width: 20%;
         font-size: 12px;
         padding-top: 15px;
+        outline: 0;
+    }
+    .follow-list__button__clicked{
+        border: 0;
+        background: none;
+        color: #000000;
+        width: 20%;
+        font-size: 12px;
+        padding-top: 15px;
+        outline: 0;
     }
     .footer-content,
     .footer

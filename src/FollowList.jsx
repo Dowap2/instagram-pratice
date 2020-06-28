@@ -1,6 +1,18 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 export function FollowList(props){
+    const [followText , setFollowText] = useState("팔로우")
+    const [buttonClass , setButtonClass] = useState("follow-list__button")
+    function follow(){
+        if(followText == "팔로우"){
+            setFollowText("팔로잉")
+            setButtonClass("follow-list__button__clicked")
+        }
+        else{
+
+        }
+    }
+
     return(
         <div className="follow-list">
             <div className="follow-list__inner">
@@ -12,7 +24,7 @@ export function FollowList(props){
                     <div className="follow-list__info__info">Followed by ssungbo + 5 more</div>
                 </div>
             </div>
-            <div className="follow-list__button">팔로우</div>
+            <button className={buttonClass} onClick={e=> follow()}>{followText}</button>
         </div>
     )
 }
