@@ -17,12 +17,14 @@ export function CommentHeader(props){
     return(
         <div>
             <div className="post__comment__icon">
-                <img src={heart} alt="heart" className="heart" onClick={e=> like()}/>
+                <img src={heart} alt="heart" className="post__heart" onClick={e=> like()}/>
                 <Link to="/p">
-                    <img src={props.comment} alt="comment" className="comment"/>
+                    <img src={props.comment} alt="comment" className="post__comment"/>
                 </Link>
-                <img src={props.send} alt="send" className="send"/>
-                <img src={props.bookmark} alt="bookmark" className="bookmark"/>
+                <Link to="/direct">
+                    <img src={props.send} alt="send" className="post__send"/>
+                </Link>
+                <img src={props.bookmark} alt="bookmark" className="post__bookmark"/>
             </div>
         </div>
     )

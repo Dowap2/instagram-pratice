@@ -44,18 +44,18 @@
     margin-top: 10px;
     display: flex;
 }
-.heart,
-.comment,
-.send,
-.bookmark
+.post__heart,
+.post__comment,
+.post__send,
+.post__bookmark
 {
     width: 24px;
     height: 24px;
     margin-right: 20px;
 }
-.send{
+.post__bookmark{
     margin: auto;
-    margin-left: 0;
+    margin-right: 0;
 }
 .post__comment__like{
     width: 90%;
@@ -147,6 +147,8 @@
         border: 0;
         background: none;
         color: blue;
+        outline: none;
+        cursor: pointer;
     }
     .post-picture-box{
         width: 614px;
