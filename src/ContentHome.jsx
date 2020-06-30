@@ -1,7 +1,8 @@
-import React from 'react';
+import React, { useState } from 'react';
 import {Story} from './Story'
 import {Post} from './Post'
 import {SideBar} from './SideBar'
+import {FollowModal} from './FollowModal'
 
 import './CSS/Header.css'
 import './CSS/Story.css'
@@ -18,8 +19,11 @@ import comment from './ICON/comment.png'
 import bookmark from './ICON/bookmark.png'
 
 export function ContentHome() {
+  const [modal , setModal] = useState("none")
+
   return (
     <div>
+      <FollowModal open={modal} setOpen={setModal}/>
         <div className="content__main">
           <div className="story">
             <Story profile={profile}/>
@@ -36,7 +40,7 @@ export function ContentHome() {
           </div>
         </div>
         <div className="side-bar">
-          <SideBar profile={profile}/>
+          <SideBar profile={profile} modal={modal} setModal={setModal}/>
         </div>
     </div>
   );

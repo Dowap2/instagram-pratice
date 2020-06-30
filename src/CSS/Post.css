@@ -46,14 +46,15 @@
 }
 .post__heart,
 .post__comment,
-.post__send,
-.post__bookmark
+.post__send
 {
     width: 24px;
-    height: 24px;
+    height: 24px; 
     margin-right: 20px;
 }
 .post__bookmark{
+    width: 24px;
+    height: 24px;
     margin: auto;
     margin-right: 0;
 }
@@ -143,12 +144,19 @@
     .add__comment__input:focus{
         outline: none;
     }
-    .add__comment__button{
+    .add__comment__button__fill{
         border: 0;
         background: none;
         color: blue;
         outline: none;
         cursor: pointer;
+    }
+    .add__comment__button{
+        border: 0;
+        background: none;
+        color: blue;
+        outline: none;
+        opacity: 40%;
     }
     .post-picture-box{
         width: 614px;

@@ -9,7 +9,7 @@ export function FollowList(props){
             setButtonClass("follow-list__button__clicked")
         }
         else{
-
+            props.setModal("block")
         }
     }
 

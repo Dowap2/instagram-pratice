@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import {Header} from './Header'
-import {FollowModal} from './FollowModal'
 import {BrowserRouter as Router, Route} from 'react-router-dom';
 
 import './CSS/App.css';
@@ -13,10 +12,8 @@ import home from './ICON/home.png'
 import { Routes } from './Routes';
 
 function App() {
-  const [isTextModalVisible, setIsTextModalVisible] = useState("none")
   return (
     <div className="App">
-      <FollowModal open={isTextModalVisible}/>
       <Router>
         <div className="header">
           <Header logo={logo} home={home} send={send} heart={heart} compass={compass}/>
