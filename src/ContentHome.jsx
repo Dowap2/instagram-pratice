@@ -22,7 +22,7 @@ export function ContentHome() {
   const [modal , setModal] = useState("none")
 
   return (
-    <div>
+    <div className="content__home">
       <FollowModal open={modal} setOpen={setModal}/>
         <div className="content__main">
           <div className="story">

@@ -51,6 +51,9 @@ a:hover, a:active { text-decoration: none; }
     z-index: 1001;
     background-color: rgba( 0, 0, 0, 0.5 );
 }
+.content__home{
+    width: 100%;
+}
 .follow-modal{
     position: relative;
     z-index: 1002;
