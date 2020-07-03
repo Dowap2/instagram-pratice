@@ -26,11 +26,6 @@ export function ContentHome() {
     axios({
       method: 'post',
       url: 'http://httpbin.org/post',
-      client_id: '957362971434779',
-      client_secret: '32976751646614d9a39dc285bb57431b',
-      grant_type: 'authorization_code',
-      redirect_uri: 'http://localhost:3001/',
-      code: 'IGQVJXVjBlMXdmV2V5aUplLXlFOUVMS2hobU5SZAmxrZAzV4MmNFUWE2bVhXdWJuSUFRYThFMVNzRHBKaWpZAVE1nenkzLThudldjenZApZADBOVzN5YTJGNmd2cE5nQlBPVV92T0JWMWRpbkhvSU02MmRkZAgZDZD',
       responseType: 'json'
     })
     .then(response => {
