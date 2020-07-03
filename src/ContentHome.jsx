@@ -3,6 +3,7 @@ import {Story} from './Story'
 import {Post} from './Post'
 import {SideBar} from './SideBar'
 import {FollowModal} from './FollowModal'
+import axios from 'axios'
 
 import './CSS/Header.css'
 import './CSS/Story.css'
@@ -20,13 +21,31 @@ import bookmark from './ICON/bookmark.png'
 
 export function ContentHome() {
   const [modal , setModal] = useState("none")
-
+  
+  function getFunc(){
+    axios({
+      method: 'post',
+      url: 'http://httpbin.org/post',
+      client_id: '957362971434779',
+      client_secret: '32976751646614d9a39dc285bb57431b',
+      grant_type: 'authorization_code',
+      redirect_uri: 'http://localhost:3001/',
+      code: 'IGQVJXVjBlMXdmV2V5aUplLXlFOUVMS2hobU5SZAmxrZAzV4MmNFUWE2bVhXdWJuSUFRYThFMVNzRHBKaWpZAVE1nenkzLThudldjenZApZADBOVzN5YTJGNmd2cE5nQlBPVV92T0JWMWRpbkhvSU02MmRkZAgZDZD',
+      responseType: 'json'
+    })
+    .then(response => {
+      console.log(response)
+    }).catch(err => {
+      console.log(err)
+    })
+  }
   return (
     <div className="content__home">
       <FollowModal open={modal} setOpen={setModal}/>
         <div className="content__main">
           <div className="story">
             <Story profile={profile}/>
+            <input type="button" value="post" id="btnPost" onClick={e=> getFunc()}/>
           </div>
           <div>
             <Post 
