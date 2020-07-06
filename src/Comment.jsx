@@ -40,7 +40,7 @@ export function Comment(props){
             </div>
             <div className="post__comment__title">
                 <b className="post__comment__id">{props.user}</b>
-                <p className="post__title">원준이 개 멍청하게 생겼다</p>
+                <p className="post__title">{props.userText}</p>
                 <p className="post-more" onClick={e => more()}>{moreText}</p>
                 <div>{moreTitle}</div>
             </div>

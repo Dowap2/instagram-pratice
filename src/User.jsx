@@ -5,9 +5,9 @@ export function User(props){
         <div>
             <div className="post__header">
                 <div className="post__header__profile">
-                    <img src={props.img} alt="profile" className="post__header__profile__picture"/>
+                    <img src={props.profile} alt="profile" className="post__header__profile__picture"/>
                 </div>
-                <div className="post__header__id">junha</div>
+                <div className="post__header__id">{props.userName}</div>
                 <div className="post__header__icon">
                     <img src={props.more} alt="more" className="more"/>
                 </div>
