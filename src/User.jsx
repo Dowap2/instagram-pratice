@@ -5,7 +5,7 @@ export function User(props){
         <div>
             <div className="post__header">
                 <div className="post__header__profile">
-                    <img src={"https://source.unsplash.com/900x900/?people"} alt="profile" className="post__header__profile__picture"/>
+                    <img src={props.img} alt="profile" className="post__header__profile__picture"/>
                 </div>
                 <div className="post__header__id">junha</div>
                 <div className="post__header__icon">

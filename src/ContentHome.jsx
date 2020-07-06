@@ -21,18 +21,29 @@ import bookmark from './ICON/bookmark.png'
 
 export function ContentHome() {
   const [modal , setModal] = useState("none")
-  
+  const [addPost , setAddPost] = useState()
+
   function getFunc(){
     axios({
-      method: 'post',
-      url: 'http://httpbin.org/post',
+      method: 'get',
+      url: 'https://randomuser.me/api/',
       responseType: 'json'
     })
     .then(response => {
-      console.log(response)
+      console.log(response.data)
+      addPostFunc(response.data.results)
     }).catch(err => {
       console.log(err)
     })
+  }
+  function addPostFunc(data){
+    if(data != undefined){
+      console.log(data[0].picture.large)
+      setAddPost(<Post
+        more={more} profile={profile} img={data[0].picture.large}
+        heart={heart} fill_heart={fill_heart} comment={comment} send={send} bookmark={bookmark}
+      />)
+    }
   }
   return (
     <div className="content__home">
@@ -41,6 +52,7 @@ export function ContentHome() {
           <div className="story">
             <Story profile={profile}/>
             <input type="button" value="post" id="btnPost" onClick={e=> getFunc()}/>
+            <input type="button" value="post" id="btnPost" onClick={e=> console.log(addPost)}/>
           </div>
           <div>
             <Post 
@@ -51,6 +63,7 @@ export function ContentHome() {
               more={more} profile={profile} img={example}
               heart={heart} fill_heart={fill_heart} comment={comment} send={send} bookmark={bookmark}
             />
+            {addPost}
           </div>
         </div>
         <div className="side-bar">

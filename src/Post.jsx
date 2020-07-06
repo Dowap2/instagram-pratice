@@ -13,7 +13,7 @@ export function Post(props){
     return(
         <div>
             <div className="post">
-                <User more={props.more} profile={props.profile}/>
+                <User more={props.more} profile={props.img}/>
                 <Picture img={"https://source.unsplash.com/900x900/?nature,water"}/>
                 <CommentHeader heart={props.heart} fill_heart={props.fill_heart} comment={props.comment} send={props.send} bookmark={props.bookmark} likeNum={likeNum} setLikeNum={setLikeNum}/>
                 <Comment profile={props.profile} user={"dowap"} comment={comment} setComment={setComment} likeNum={likeNum}/>
