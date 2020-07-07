@@ -22,8 +22,9 @@ import { getByText } from '@testing-library/dom';
 
 export function ContentHome() {
   const [modal , setModal] = useState("none")
-  const [addPost , setAddPost] = useState()
+  const [addPost , setAddPost] = useState([])
   const [userText , setUserText] = useState("")
+  const [postID , setPostID] = useState(0)
   let userName = "DRX_Deft"
 
   function getFunc(){
@@ -41,25 +42,28 @@ export function ContentHome() {
   }
   function addPostFunc(data){
     if(data != undefined){
-      getText();
       console.log(data[0].picture.large)
-      setAddPost(<Post
-        more={more} profile={profile} img={data[0].picture.large} userName={data[0].email} userText={userText}
-        heart={heart} fill_heart={fill_heart} comment={comment} send={send} bookmark={bookmark}
-      />)
+      const post = <Post
+      more={more} profile={data[0].picture.large} userName={data[0].email} userText={userText}
+      img={"https://picsum.photos/200/300?random="+{postID}}
+      heart={heart} fill_heart={fill_heart} comment={comment} send={send} bookmark={bookmark}
+      />
+      const array = addPost.concat(post)
+      setAddPost(array)
+      setPostID(postID+1)
     }
-    function getText(){
-      axios({
-        method: 'get',
-        url: 'https://www.randomtext.me/api/lorem/ul-5/5-15/',
-        responseType: 'json'
-      }).then(response => {
-        console.log(response.data)
-        setUserText(response.data.text_out)
-      }).catch(err => {
-        console.log(err)
-      })
-    }
+  }
+  function getPicture(){
+    axios({
+      method: 'get',
+      url: "https://source.unsplash.com/random/800x800",
+      responseType: 'link'
+    })
+    .then(response => {
+      console.log(response.data)
+    }).catch(err => {
+      console.log(err)
+    })
   }
   
   return (
@@ -69,18 +73,10 @@ export function ContentHome() {
           <div className="story">
             <Story profile={profile}/>
             <input type="button" value="post" id="btnPost" onClick={e=> getFunc()}/>
-            <input type="button" value="post" id="btnPost" onClick={e=> console.log(addPost)}/>
-            <input type="button" value="post" id="btnPost" onClick={e=> console.log(userText)}/>
+            <input type="button" value="getPicture" id="btnPost" onClick={e=> getPicture()}/>
+            <input type="button" value="addPost" id="btnPost" onClick={e=> console.log(addPost)}/>
           </div>
           <div>
-            <Post 
-              more={more} profile={profile} img={example} userName={userName}
-              heart={heart} fill_heart={fill_heart} comment={comment} send={send} bookmark={bookmark}
-            />
-            <Post 
-              more={more} profile={profile} img={example} userName={userName}
-              heart={heart} fill_heart={fill_heart} comment={comment} send={send} bookmark={bookmark}
-            />
             {addPost}
           </div>
         </div>
