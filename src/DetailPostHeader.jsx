@@ -7,10 +7,10 @@ export function DetailPostHeader(props){
     <div>
         <div className="detail-post__header">
             <div className="detail-post__profile__box">
-                <img src={"https://source.unsplash.com/900x900/?logo"} className="detail-post__profile"/>
+                <img src={props.profile} className="detail-post__profile"/>
             </div>
             <div className="detail-post__id">
-                dowapdowari
+                {props.name}
             </div>
             <div className="detail-post__more">
                 <img src={props.more} alt="more" className="detail-post__more__icon"/>

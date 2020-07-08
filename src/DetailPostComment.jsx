@@ -6,7 +6,7 @@ export function DetailPostComment(props){
     let commentNum = commentList.length;
     if(props.addComment != null){
         let newCommentItem =    <div className="comment__item">
-                                    <img src={props.img} className="post-comment__profile"/>
+                                    <img src={props.profile} className="post-comment__profile"/>
                                     <div className="post-comment__comment__text">
                                         <div>
                                             <b className="user__id">dowapdowari</b>{props.addComment}
@@ -23,7 +23,7 @@ export function DetailPostComment(props){
     if(props.comment != null){
         for(let i=0; i<props.comment.length; i++){
             let commentItem =   <div className="comment__item">
-                                    <img src={props.img} className="post-comment__profile"/>
+                                    <img src={props.profile} className="post-comment__profile"/>
                                     <div className="post-comment__comment__text">
                                         <div>
                                             <b className="user__id">dowapdowari</b>{props.comment[i]}
@@ -44,7 +44,7 @@ export function DetailPostComment(props){
     <div className="post-comment__box">
         <div className="post-comment">
             <div className="post-comment__profile__box">
-                <img src={props.img} className="post-comment__profile"/>
+                <img src={props.profile} className="post-comment__profile"/>
             </div>
             <div className="post-comment__comment">
                 <div className="post-comment__title">

@@ -18,7 +18,6 @@ import send from './ICON/send.png'
 import more from './ICON/more.png'
 import comment from './ICON/comment.png'
 import bookmark from './ICON/bookmark.png'
-import { getByText } from '@testing-library/dom';
 
 export function ContentHome() {
   const [modal , setModal] = useState("none")
@@ -43,7 +42,7 @@ export function ContentHome() {
       if(data != undefined){
         console.log(data[0].picture.large)
         const post = <Post
-        more={more} profile={data[0].picture.large} userName={data[0].email} img={"https://picsum.photos/200/300?random="+{postID}}
+        more={more} profile={data[0].picture.large} userName={data[0].email} img={"https://source.unsplash.com/random/800x800"}
         heart={heart} fill_heart={fill_heart} comment={comment} send={send} bookmark={bookmark}
         />
         const array = addPost.concat(post)

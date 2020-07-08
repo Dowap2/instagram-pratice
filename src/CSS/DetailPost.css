@@ -39,11 +39,11 @@
 }
 .detail-post__more{
     margin: auto;
+    margin-right: 20px;
 }
 .detail-post__more__icon{
     width: 16px;
     height: 16px;
-    margin-left: 100px;
 }
 .post-comment__box{
     height: calc(600px - 57px - 73px);

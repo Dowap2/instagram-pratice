@@ -3,6 +3,7 @@ import {Link} from "react-router-dom";
 
 let list = []; //home에서 보이는 리스트
 let moreList = []; //p로 가는 버튼
+let obj = {};
 let hiddenList = []; //p로 넘기는 모든 댓글
 let commentNum = 0;
 let moreTitle = []
@@ -27,6 +28,10 @@ export function Comment(props){
         hiddenList = hiddenList.concat(props.comment);
         commentNum += 1;
         props.setComment(undefined)
+        obj.list = hiddenList
+        obj.profile = props.profile
+        obj.img = props.img
+        obj.name = props.name
     }
     function more(){
         moreTitle=<div>#text</div>
@@ -45,7 +50,7 @@ export function Comment(props){
                 <div>{moreTitle}</div>
             </div>
             <div className="post__comment__text">
-                <Link to={{ pathname: '/p', state: hiddenList }}>
+                <Link to={{ pathname: '/p', state: obj }}>
                     {moreList}
                 </Link>
                 {list}
