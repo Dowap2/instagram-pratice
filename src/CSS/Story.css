@@ -21,6 +21,7 @@
     background: none;
     border: none;
     outline: none;
+    cursor: pointer;
 }
 .story__next{
     width: 24px;

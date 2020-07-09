@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import cors from 'cors'
 import {Header} from './Header'
 import {BrowserRouter as Router, Route} from 'react-router-dom';
 
