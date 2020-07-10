@@ -4,24 +4,28 @@ import {StoryList} from './StoryList'
 import next from './ICON/next.png'
 
 export function Story(props){
-    const [storyList,setStoryList] = useState([])
-    let storyItem = [];
-    if(storyList.length < 10){
+    const [storyList , setStoryList] = useState([])
+    const [storyItem , setStoryItem] = useState([])
+
+    function addAxios(){
         axios({
-            method: 'get',
-            url: 'https://randomuser.me/api/',
-            headers: {"Access-Control-Allow-Origin": "*"},
-            responseType: 'json'
+          method: 'get',
+          url: 'https://randomuser.me/api/',
+          responseType: 'json'
         })
         .then(response => {
-            console.log(response.data)
-            let Data = response.data.results[0]
-            storyItem = <StoryList img={Data.picture.large} name={Data.name.first}/>
-            setStoryList(storyList.concat(storyItem))
+          makeStory(response.data.results[0])
         }).catch(err => {console.log(err)})
     }
+
+    function makeStory(info){
+        setStoryItem(<StoryList img={info.picture.large} name={info.name.first}/>)
+        setStoryList(storyList.concat(storyItem))
+    }
+
     return(
         <div className="story__box">
+            <button className="functionButton" onClick={e=> addAxios()}>addStory</button>
             <div className="story__inner">
                 <button className="story__next__button">
                     <img src={next} className="story__next"/>

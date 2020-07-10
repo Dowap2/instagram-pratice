@@ -22,29 +22,32 @@ export function ContentHome() {
   const [modal , setModal] = useState("none")
   const [addPost , setAddPost] = useState([])
 
+  function addAxios(){
+    axios({
+      method: 'get',
+      url: 'https://randomuser.me/api/',
+      responseType: 'json'
+    })
+    .then(response => {
+      makePost(response.data.results[0])
+    }).catch(err => {console.log(err)})
+  }
+
+  function makePost(info){
+    const post = <Post
+                  more={more} profile={info.picture.large} userName={info.email} img={"https://source.unsplash.com/random/800x800"}
+                  heart={heart} fill_heart={fill_heart} comment={comment} send={send} bookmark={bookmark}
+                />
+    const array = addPost.concat(post)
+    setAddPost(array)
+  }
+
   function InfinityScrolling(){
-    if((window.innerHeight + window.scrollY) >= (document.body.offsetHeight)) {
-      axios({
-        method: 'get', 
-        headers: {"Access-Control-Allow-Origin": "*"},
-        url: 'https://randomuser.me/api/',
-        responseType: 'json'
-      })
-      .then(response => {
-        addPostFunc(response.data.results)
-      }).catch(err => {console.log("에러")})
+    if((window.innerHeight + window.scrollY) >= (document.body.offsetHeight-100)){
+      addAxios();
     }
   };
-  function addPostFunc(data){
-    if(data != undefined){
-      const post = <Post
-      more={more} profile={data[0].picture.large} userName={data[0].email} img={"https://source.unsplash.com/random/800x800"}
-      heart={heart} fill_heart={fill_heart} comment={comment} send={send} bookmark={bookmark}
-      />
-      const array = addPost.concat(post)
-      setAddPost(array)
-    }
-  }
+
   
   return (
     <div className="content__home" onscroll={InfinityScrolling()}>

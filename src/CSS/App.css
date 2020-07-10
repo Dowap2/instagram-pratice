@@ -97,6 +97,11 @@ a:hover, a:active { text-decoration: none; }
     outline: 0;
     cursor: pointer;
 }
+.functionButton{
+    z-index: 10000;
+    width: 60px;
+    height: 20px;
+}
 @media screen and (min-width: 768px){
     .content{
         width: 935px;
