@@ -1,7 +1,6 @@
-import React, { useState } from 'react';
-import cors from 'cors'
+import React from 'react';
 import {Header} from './Header'
-import {BrowserRouter as Router, Route} from 'react-router-dom';
+import {BrowserRouter as Router} from 'react-router-dom';
 
 import './CSS/App.css';
 

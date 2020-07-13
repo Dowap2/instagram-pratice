@@ -1,7 +1,7 @@
 import React from 'react';
 import send from './ICON/send.png'
 
-export function CreateMessege(props){
+export function CreateMessege(){
     return(
     <div className="create__messege">
         <div className="messege__send__icon__box">

@@ -1,9 +1,9 @@
 import React from 'react';
-
 import {SideTab} from './SideTab'
 import {MessegeBox} from './MessegeBox'
+import {BrowserRouter as Router} from 'react-router-dom';
+
 import './CSS/Messege.css'
-import {BrowserRouter as Router, Route} from 'react-router-dom';
 
 export function Messege(props) {
   return (

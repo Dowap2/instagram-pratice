@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import {Link} from "react-router-dom";
 
 let list = []; //home에서 보이는 리스트

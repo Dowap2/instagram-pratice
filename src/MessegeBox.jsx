@@ -1,5 +1,5 @@
 import React from 'react';
-import { MessegeRoutes } from './MessegeRoutes';
+import {MessegeRoutes} from './MessegeRoutes';
 
 export function MessegeBox(props) {
   return (

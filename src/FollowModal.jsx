@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 
 export function FollowModal(props){
 
@@ -7,6 +7,7 @@ export function FollowModal(props){
         props.setFollow("팔로우")
         props.setBtn("follow-list__button")
     }
+    
     return(
         <div
             className="modal__overlay"

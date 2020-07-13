@@ -4,9 +4,7 @@ import {Link} from "react-router-dom";
 export function Header(props){
     return(
         <div>
-            
             <div className="header__inner">
-                
                     <div className="header__logo">
                         <Link to="/home">
                             <img src={props.logo} className="logo" alt="logo"/>
