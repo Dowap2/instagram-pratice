@@ -21,6 +21,8 @@ import bookmark from './ICON/bookmark.png'
 export function ContentHome() {
   const [modal , setModal] = useState("none")
   const [addPost , setAddPost] = useState([])
+  const [follow , setFollow] = useState("팔로우")
+  const [btn , setBtn] = useState("follow-list__button")
 
   function addAxios(){
     axios({
@@ -32,7 +34,6 @@ export function ContentHome() {
       makePost(response.data.results[0])
     }).catch(err => {console.log(err)})
   }
-
   function makePost(info){
     const post = <Post
                   more={more} profile={info.picture.large} userName={info.email} img={"https://source.unsplash.com/random/800x800"}
@@ -41,17 +42,15 @@ export function ContentHome() {
     const array = addPost.concat(post)
     setAddPost(array)
   }
-
   function InfinityScrolling(){
     if((window.innerHeight + window.scrollY) >= (document.body.offsetHeight-100)){
       addAxios();
     }
   };
 
-  
   return (
     <div className="content__home" onscroll={InfinityScrolling()}>
-      <FollowModal open={modal} setOpen={setModal}/>
+      <FollowModal open={modal} setOpen={setModal} setFollow={setFollow} setBtn={setBtn}/>
         <div className="content__main">
           <div className="story">
             <Story profile={profile}/>
@@ -61,7 +60,15 @@ export function ContentHome() {
           </div>
         </div>
         <div className="side-bar">
-          <SideBar profile={profile} modal={modal} setModal={setModal}/>
+          <SideBar 
+            profile={profile}
+            modal={modal}
+            setModal={setModal}
+            follow={follow}
+            setFollow={setFollow}
+            btn={btn}
+            setBtn={setBtn}
+          />
         </div>
     </div>
   );
