@@ -3,9 +3,9 @@ import axios from 'axios'
 import {StoryList} from './StoryList'
 import next from './ICON/next.png'
 
-export function Story(props){
-    const [storyList , setStoryList] = useState([])
-    const [storyItem , setStoryItem] = useState([])
+export function Story(){
+    const [storyList , setStoryList] = useState([]);
+    const [storyItem , setStoryItem] = useState([]);
 
     function addAxios(){
         axios({
@@ -25,7 +25,6 @@ export function Story(props){
 
     return(
         <div className="story__box">
-            <button className="functionButton" onClick={e=> addAxios()}>addStory</button>
             <div className="story__inner">
                 <button className="story__next__button">
                     <img src={next} className="story__next"/>
